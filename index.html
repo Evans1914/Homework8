@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Trends & News Dashboard</title>
+    <!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Axios for API requests -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- Chart.js for data visualization -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 p-5">
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-4 text-center">Tech Trends & News</h1>
+
+        <!-- Tech News Section -->
+        <div>
+            <h2 class="text-xl font-semibold mb-2">Latest Tech News</h2>
+            <ul id="news-list" class="list-disc pl-5 text-blue-600"></ul>
+        </div>
+
+        <!-- Trending GitHub Repos -->
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold mb-2">Trending GitHub Repositories</h2>
+            <ul id="github-list" class="list-disc pl-5 text-green-600"></ul>
+        </div>
+
+        <!-- Chart Section -->
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold mb-2">Trending Topics Chart</h2>
+            <canvas id="trendsChart"></canvas>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
